@@ -1,0 +1,36 @@
+﻿  BaseGame.cpp
+D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\Engine\BaseGame.cpp(219,42): warning C4244: 'argument': conversion from 'SDL_GameControllerAxis' to 'unsigned char', possible loss of data
+D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\Engine\BaseGame.cpp(219,20): warning C4189: 'key': local variable is initialized but not referenced
+D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\Engine\BaseGame.cpp(322,26): warning C4365: '=': conversion from 'int' to 'Uint8', signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244: 'initializing': conversion from '_Ty' to '_Ty1', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:             _Ty=SDL_GameControllerButton
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         and
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:             _Ty1=const Uint8
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16): warning C4244:         ]
+  (compiling source file 'BaseGame.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\utility(274,16):
+      the template instantiation context (the oldest one first) is
+          D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\Engine\BaseGame.cpp(262,3):
+          see reference to function template instantiation 'std::pair<const Uint8,SDL_Scancode>::pair<SDL_GameControllerButton,SDL_Scancode,0>(_Other1 &&,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=SDL_GameControllerButton,
+              _Other2=SDL_Scancode
+          ]
+              D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\Engine\BaseGame.cpp(261,18):
+              see the first reference to 'std::pair<const Uint8,SDL_Scancode>::pair' in 'BaseGame::InitControllerMap'
+  
+  Matrix2x3.cpp
+  SoundEffect.cpp
+  SoundStream.cpp
+  structs.cpp
+  SVGParser.cpp
+  Texture.cpp
+  utils.cpp
+  Vector2f.cpp
+  Generating Code...
+  Engine.vcxproj -> D:\c++\dae13-PechaPatrik\DAE13_Pecha_Patrik\x64\Debug\Engine.lib
