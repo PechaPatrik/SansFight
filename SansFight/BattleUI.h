@@ -38,7 +38,7 @@ public:
     size_t GetCurrentPattern() const { return m_currentPattern; }
     bool IsEndScreen() const { return m_isEndScreen; }
     void SetAttackMenu(bool newInAttackMenu) { m_selectingAttack = newInAttackMenu; }
-    bool IsAttackMenu() { return m_selectingAttack; }
+    bool IsAttackMenu() const { return m_selectingAttack; }
 private:
     const Vector2f m_HPBarStartPos{ Vector2f{274.f, 75.f} };
     const float m_HPBarHeight{ 18.f };

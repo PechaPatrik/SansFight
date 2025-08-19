@@ -78,7 +78,7 @@ void Sans::Draw(BattleUI* battleUI) const
 				m_pSweatTextures[1]->GetHeight() - 2
 			});
 	}
-	else if (battleUI && battleUI->GetCurrentPattern() > 23) {
+	else if (battleUI && battleUI->GetCurrentPattern() > 23 && m_pHeadTexture) {
 		m_pSweatTextures[2]->Draw(Rectf{ m_headPos.x,
 			m_headPos.y + m_pHeadTexture->GetHeight() * 2.f - m_pSweatTextures[2]->GetHeight() * 2.f + 2.f,
 			m_pHeadTexture->GetWidth() * 2.f,
