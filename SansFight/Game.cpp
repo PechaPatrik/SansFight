@@ -61,9 +61,6 @@ void Game::Cleanup()
 
 void Game::Update(float elapsedSec) {
 	if (m_pBattleUI->IsEndScreen() || m_pBattleUI->IsAttackMenu()) {
-		if (m_megalovania.IsPlaying()) {
-			m_megalovania.Pause();
-		}
 		return;
 	}
 
@@ -169,6 +166,12 @@ void Game::ProcessKeyDownEvent(const SDL_KeyboardEvent& e) {
 	ToggleFullscreen(e);
 
 	if (!m_pAttackManager->IsAttackInProgress() && e.keysym.sym == SDLK_m) {
+		if (!m_corridor && m_pBattleUI->IsAttackMenu()) {
+			m_megalovania.Resume();
+		}
+		else if (!m_corridor) {
+			m_megalovania.Pause();
+		}
 		m_pBattleUI->SetAttackMenu(!m_pBattleUI->IsAttackMenu());
 	}
 
