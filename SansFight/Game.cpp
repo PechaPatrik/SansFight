@@ -61,6 +61,9 @@ void Game::Cleanup()
 
 void Game::Update(float elapsedSec) {
 	if (m_pBattleUI->IsEndScreen() || m_pBattleUI->IsAttackMenu()) {
+		if (m_megalovania.IsPlaying()) {
+			m_megalovania.Pause();
+		}
 		return;
 	}
 
